@@ -13,7 +13,12 @@ then
 	str="![](https://cdn.jsdelivr.net/gh/danansheng/MyImage/PIC/"
 	for file in `ls`
 	do
-		echo $str$file > $linkfile
+		echo $str$file")" > $linkfile
 		mv ./$file ~/Desktop/MyImage/PIC
 	done
+	git status
+	git add .
+	git commit -m "upload by shell"
+	git pull
+	git push
 fi
