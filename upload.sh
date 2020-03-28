@@ -8,6 +8,7 @@ read choice
 
 if [ $choice = yes ] 
 then
+	git pull
 	cd ./images
 	linkfile=~/Desktop/cdnlinks.txt
 	str="![](https://cdn.jsdelivr.net/gh/danansheng/MyImage/PIC/"
@@ -19,6 +20,5 @@ then
 	git status
 	git add .
 	git commit -m "upload by shell"
-	git pull
 	git push
 fi
