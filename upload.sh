@@ -17,6 +17,7 @@ then
 		echo $str$file")" >> $linkfile
 		mv ./$file ~/Desktop/MyImage/PIC
 	done
+	cd ..
 	git status
 	git add .
 	git commit -m "upload by shell"
