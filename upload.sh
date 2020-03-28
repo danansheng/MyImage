@@ -18,8 +18,8 @@ then
 		mv ./$file ~/Desktop/MyImage/PIC
 	done
 	cd ..
-	git status
 	git add .
+	git status
 	git commit -m "upload by shell"
 	git push
 fi
